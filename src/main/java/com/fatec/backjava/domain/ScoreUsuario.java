@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="score_usuario", schema="public")
+@Table(name="score_usuario")
 public class ScoreUsuario implements Serializable{
 
 	private static final long serialVersionUID = 1L;
