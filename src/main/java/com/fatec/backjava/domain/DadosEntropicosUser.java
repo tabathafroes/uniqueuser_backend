@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="dados_entropicos_user")
+@Table(name="dados_entropicos_user", schema="public")
 public class DadosEntropicosUser implements Serializable{
 
 	private static final long serialVersionUID = 1L;
