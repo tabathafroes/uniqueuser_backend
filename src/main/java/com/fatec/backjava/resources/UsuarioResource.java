@@ -65,21 +65,21 @@ public class UsuarioResource {
 	}
 	
 	@ApiOperation(value="Realiza a busca da lista de DTO de usuarios unicos")
-	@GetMapping("/buscarUsuarioUnicoDTO")
+	@GetMapping("/buscarScoreDTO")
 	public ResponseEntity<List<UsuarioUnicoDTO>> buscarUsuarioUnicoDTO() {
 		List<UsuarioUnicoDTO> listaUsuarioUnicoDTO = usuarioService.buscarUsuarioUnicoDTO();
 		return ResponseEntity.ok().body(listaUsuarioUnicoDTO);
 	}
 
 	@ApiOperation(value="Realiza a busca da lista de DTO de usuarios agrupados pelo kmeans")
-	@GetMapping("/buscarListaUsuarioKmeansDTO")
+	@GetMapping("/buscarKmeans")
 	public ResponseEntity<List<UsuarioKmeansDTO>> buscarListaUsuarioKmeansDTO() {
 		List<UsuarioKmeansDTO> listaUsuarioKmeansDTO = usuarioService.buscarListaUsuarioKmeansDTO();
 		return ResponseEntity.ok().body(listaUsuarioKmeansDTO);
 	}
 	
 	@ApiOperation(value="Realiza a busca da lista de DTO de usuarios agrupados pelo dedupe")
-	@GetMapping("/buscarListaUsuarioDedupeDTO")
+	@GetMapping("/buscarDedupe")
 	public ResponseEntity<List<UsuarioDedupeDTO>> buscarListaUsuarioDedupeDTO() {
 		List<UsuarioDedupeDTO> listaUsuarioDedupeDTO = usuarioService.buscarListaUsuarioDedupeDTO();
 		return ResponseEntity.ok().body(listaUsuarioDedupeDTO );
